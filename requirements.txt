@@ -64,7 +64,6 @@ PySocks
 pytest
 python-dateutil
 pytz
-pywin32
 pywinpty
 pyzmq
 qtconsole
