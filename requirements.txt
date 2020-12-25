@@ -15,6 +15,7 @@ defusedxml==0.6.0
 entrypoints==0.3
 funcy==1.15
 future==0.18.2
+gunicorn
 idna==2.10
 iniconfig==1.1.1
 ipykernel==5.3.4
