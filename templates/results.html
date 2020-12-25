@@ -40,14 +40,14 @@
 	<div class="container">
 		<form action="{{ url_for('predict')}}" id="model_predictor" method="GET" >
 			<h2 class="sr-only">Final ML Results</h2>
-            <div class="illustration"><i class="icon ion-ios-navigate" style="color: rgb(254,209,53);"></i></div>
-            <p><strong>Result of Tweet Sentiment</strong></p>
-             <div class="results">
-                {% if prediction == 1%}
-                    <h2 style="color:cornflowerblue;">The message is Positive</h2>
-                {% elif prediction == 0%}
-                    <h2 style="color:darkred;">The message is Negative</h2>
-				 {% elif prediction == "Got None"%}
+            		<div class="illustration"><i class="icon ion-ios-navigate" style="color: rgb(254,209,53);"></i></div>
+            		<p><strong>Result of Tweet Sentiment</strong></p>
+             		<div class="results">
+                	{% if prediction == 1%}
+                    	<h2 style="color:cornflowerblue;">The message is Positive</h2>
+                	{% elif prediction == 0%}
+                    	<h2 style="color:darkred;">The message is Negative</h2>
+			{% elif prediction == "Got None"%}
                     <h2 style="color:darkred;">There was no message entered</h2>
                 {% endif %}
              </div>
