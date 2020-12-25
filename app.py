@@ -10,8 +10,8 @@ model = load_model("model/modela.h5")
 with open('model/tokenizer.pickle', 'rb') as handle:
     tokenizer = pickle.load(handle)
 
-label2int = {'0': 0, '1': 1}
-int2label = {0: '0', 1: '1'}
+# label2int = {'0': 0, '1': 1}
+# int2label = {0: '0', 1: '1'}
 SEQUENCE_LENGTH = 22
 
 
@@ -56,7 +56,7 @@ def show_predict(tweet):
 app = Flask(__name__)
 
 
-@app.route('/', methods=['GET'])
+@app.route('/')
 def home():
     return render_template('index.html')
 
