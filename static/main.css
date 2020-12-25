@@ -1,0 +1,230 @@
+/*Styling for html body to allow content ocupy the full screen*/
+body {
+	margin: 0 auto;
+	/*padding-left: 20px;*/
+}
+
+/*Styling for elements in the header*/
+header {
+	background-color: #041221;
+    margin: 0;
+    display: grid;
+    padding: 10px 20px 10px 20px;
+    grid-template-columns: 55% 45%;
+    
+}
+
+/*Styling for the logo image*/
+header img{
+	max-width: 80px;
+	max-height: 92px;
+}
+
+/*Styling for the navigation bar*/
+nav{
+	text-align: right;
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%); 
+}
+
+/*Styling for the link texts in the navigation bar*/
+nav a{
+	width: 150px;
+	height: 31px;
+	padding: 5px 50px 0 0;
+	font-family: PT Sans, serif;
+	font-size: 20px;
+	color: white;
+	text-decoration: none solid rgb(255, 255, 255);
+	text-align: center;
+}
+
+/*Styling for the background div*/
+.background{
+	position: relative;
+}
+
+/*Styling for image on the homepage background*/
+.background img{
+	object-fit: cover;
+	height: 530px;
+	width: 100%
+}
+
+/*Styling for the shade on the background image*/
+.shade{
+	width: 100%;
+    height: 530px;
+    background: rgba(88,151,251,0.4);
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+/*Styling for div content in the shade*/
+.shade div{
+	position: relative;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*Styling for the h1 tag in the shade containing the text*/
+.shade div h1{
+	width: 453px;
+	height: 130px;
+	font-family: PT Sans, serif;
+	font-size: 50px;
+	color: #ffffff;
+	text-decoration: none solid rgb(255, 255, 255);
+	text-align: center;
+	margin: auto auto 12px;
+}
+
+/*Styling for the link button in the shade.*/
+.shade div button, #form_button{
+	width: 156px;
+	height: 44px;
+	border-radius: 5px;
+	padding: 6px 10px;
+	background-color: #3498db;
+	font-family: PT Sans, serif;
+	font-size: 20px;
+	color: #ffffff;
+	text-decoration: none solid rgb(255, 255, 255);
+	text-align: center;
+}
+
+/*Styling for the footer container*/
+footer{
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 60% 40%;
+	position: relative;
+	background-color: #342f3c;
+	padding-left: 50px;
+	font-family: PT Sans, serif;
+}
+
+/*Styling for the H5 element in the footer*/
+footer h5{
+	/*font-family: PT Sans;*/
+	font-size: 14px;
+	font-weight: normal;
+	color: #ffffff;
+	text-decoration: none solid rgb(255, 255, 255);
+}
+
+/*Styling for the navigation bar in the footer*/
+footer nav a{
+	font-size: 16px;
+	color: #ffffff;
+	text-decoration: none solid rgb(255, 255, 255);
+	text-align: center;
+}
+
+/*!*Styling for the "Availabel courses" text*!*/
+/*body h3{*/
+	/*font-family: PT Sans, serif;*/
+	/*font-size: 24px;*/
+	/*color: #424242;*/
+	/*margin-left: 50px;*/
+/*}*/
+
+
+body
+{
+  font-family:  "Gill Sans", "Gill Sans MT", Calibri, Trebuchet MS, sans-serif;
+  font-weight: 100;
+  font-size:  20px;
+  /*line-break: 30px;*/
+  color: #777;
+  background: linear-gradient(to right,#dce35b,#45be);
+}
+
+.container {
+  max-width: 400px;
+  width:  100%;
+  margin:0 auto;
+  position: relative;
+}
+
+#model_predictor  {
+  background:#f9f9f9;
+  padding:  20px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+
+}
+
+#model_predictor h3{
+  display:  block;
+  font-size:  30px;
+  font-weight:  bold;
+  margin-bottom:  10px;
+}
+
+#model_predictor h4{
+  margin: 5px 0 15px;
+  display:  block;
+  font-size:  20px;
+  font-weight: bold;
+}
+
+
+textarea{
+  border:0;
+  margin:0 0 10px;
+  min-width: 100%;
+  padding:5px;
+  width: 100%;
+  outline:  none;
+}
+
+
+
+fieldset{
+  border:0;
+  margin:0 0 10px;
+  min-width: 100%;
+  padding:1px;
+  width: 100%;
+  outline:  none;
+}
+
+#model_predictor textarea{
+  width: 100%;
+  border: 1px solid #ccc;
+  margin: 0 0 20px;
+  padding-left: inherit;
+  opacity: 0.5;
+  transition:    all 0.3s ease-in-out;
+	  }
+
+#model_predictor select:focus,option,textarea:focus{
+  transition:   border-color 0.3s ease-in-out;
+  border:1px solid #bbb;
+  outline:  none;
+  opacity: 0.6;
+  border-radius: 10px;
+  background:#FFFFFF;
+}
+
+#model_predictor input[type="submit"] {
+  width: 100%;
+
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #45a049;
+  box-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+}

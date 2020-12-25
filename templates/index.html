@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ML Model || Home Page</title>
+    <link rel="stylesheet" type="text/css" href="../static/main.css">
+	<link href='https://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+	<!-- Section for the header containing the logo and navigation links-->
+	<header class="header">
+		<!--Div containing logo-->
+		<div>
+			<img src="../static/images/micon.png" alt="Brand Logo">
+		</div>
+
+		<!--Navigation links in the header-->
+		<div class="navigation">
+			<nav>
+				<a href="index.html">Home Page</a>
+				<a href="results.html">Predict</a>
+				<!--<a href="Contact_page.html">Contact Us</a>-->
+			</nav>
+		</div>
+	</header>
+
+	<!-- Section containing tag line and background slide show image-->
+	<section class="background">
+		<img src="../static/images/background1.jpg" alt="Background Image">
+		<div class="shade">
+			<div>
+				<h1>Let us help you make studying fun!</h1>
+				<a href="#model_predictor"><button >View Courses</button></a>
+			</div>
+		</div>
+	</section>
+
+	<div class="container">
+		<form action="{{ url_for('predict')}}" id="model_predictor" method="POST"  >
+			<h3>Spam Classifier</h3>
+			<h4> Email Spam Classifier Predictor</h4>
+
+
+			<fieldset>
+				Email: <br> <br>
+				<textarea name="text-message" rows="6" cols="20"></textarea>
+			</fieldset>
+
+			<fieldset>
+				<input type="submit" value="predict">
+			</fieldset>
+
+		</form>
+	</div>
+
+
+	<!-- Footer section containing navigation links and additional details-->
+	<footer>
+		<h5>WEB DEVELOPMENT 2019 &#0169</h5>
+
+		<div>
+			<nav>
+				<a href="{{ url_for('take')}}">Home Page</a>
+				<a href="results.html">Make Prediction</a>
+				<!--<a href="Contact_page.html">Contact Us</a>-->
+			</nav>
+		</div>
+	</footer>
+</body>
+</html>
